@@ -8,7 +8,16 @@ This project analyzes Amazon product review data using Pivot Tables. It explores
 ### 2. Data Source
 Data Source: The parmary dataset used for the analysis is "Amazon case study.xlsx" provided by DSA Data_file containing analytical exercises, such as product performance, review sentiment, and pricing
 
+### TOOLS
+
+Ms Excel for Data cleaning [Download Excel (Microsoft 365)](https://www.microsoft.com/en-us/microsoft-365/excel)
+ - for Data Collection
+ - for Data cleaning
+     1. Data manipolation
+     2. Data Manching
+ 
 ### 3. Data Cleaning/Preparation
+
 
 In the initial data preparation phase, i performed the following task;
 1. Data Loading and inspecting.
@@ -33,3 +42,106 @@ EDA involved exploring the sales data to answer the Question, such as:
 - How many products have fewer than 1,000 reviews?
 - Which categories have the highest discounts?
 - What are the top 5 products by combined rating and review count?
+
+### Data Analysis
+
+Include some interersting code/ features worked with
+
+```This is Generated Using Excel Pivot Tables
+
+1. Average Discount Percentage by Category
+- Insert Pivot Table
+- **Rows**: `category`
+- **Values**: `discount_percentage` → Summarize by **Average`
+
+2. Number of Products by Category
+- Insert Pivot Table
+- **Rows**: `category`
+- **Values**: `product_id` → **Count**
+- 🔹 To get distinct products: check "Add this data to the Data Model" and use **Distinct Count**
+
+3. Total Reviews per Category
+- Insert Pivot Table
+- **Rows**: `category`
+- **Values**: `rating_count` → Summarize by **Sum**
+
+4. Products with Highest Average Ratings
+- Insert Pivot Table
+- **Rows**: `product_name`
+- **Values**: `rating` → **Average**
+- 🔹 Sort descending to view highest-rated products
+
+5. Average Actual Price vs Discounted Price by Category
+- Insert Pivot Table
+- **Rows**: `category`
+- **Values**:
+  - `actual_price` → **Average**
+  - `discounted_price` → **Average**
+
+6. Products with Highest Number of Reviews
+- Insert Pivot Table
+- **Rows**: `product_name`
+- **Values**: `rating_count` → **Sum**
+- 🔹 Sort descending
+
+7. Products with ≥ 50% Discount
+- Use Filter: `discount_percentage >= 0.5`
+- Optionally add:
+  - **Rows**: `product_name`
+  - **Values**: `product_id` → Count
+
+8. Distribution of Product Ratings
+- Insert Pivot Table
+- **Rows**: `rating`
+- **Values**: `product_id` → **Count**
+
+9. Total Potential Revenue by Category
+- Add column in sheet:
+  =actual_price * rating_count
+- Insert Pivot Table
+  - **Rows**: `category`
+  - **Values**: your new `revenue` column → **Sum**
+
+10. Products per Price Bucket
+- Add column in sheet:
+  =IF(discounted_price<200,"<₹200",IF(discounted_price<=500,"₹200–₹500",">₹500"))
+- Insert Pivot Table:
+  - **Rows**: `price_bucket`
+  - **Values**: `product_id` → **Count**
+
+11. Rating vs Discount (Scatter Plot)
+- Select columns: `rating` and `discount_percentage`
+- Insert → Scatter Chart
+- Optional: Add **trendline**
+
+---
+
+### 12. Products with <1,000 Reviews
+- Use Filter: `rating_count < 1000`
+- Or:
+  - **Rows**: `product_name`
+  - **Values**: `rating_count`
+  - Filter or sort accordingly
+
+---
+
+### 13. Categories with Highest Discounts
+- Insert Pivot Table
+- **Rows**: `category`
+- **Values**: `discount_percentage` → **Average**
+- 🔹 Sort descending
+
+---
+
+### 14. Top 5 Products by Composite Score
+- Add column in sheet:
+  ```excel
+  =rating * LN(rating_count + 1)
+  ```
+- Insert Pivot Table:
+  - **Rows**: `product_name`
+  - **Values**: new column → **Average**
+  - 🔹 Sort descending, pick top 5
+
+---
+
