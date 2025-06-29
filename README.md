@@ -114,34 +114,49 @@ Include some interersting code/ features worked with
 - Insert → Scatter Chart
 - Optional: Add **trendline**
 
----
-
-### 12. Products with <1,000 Reviews
+12. Products with <1,000 Reviews
 - Use Filter: `rating_count < 1000`
 - Or:
   - **Rows**: `product_name`
   - **Values**: `rating_count`
   - Filter or sort accordingly
 
----
-
-### 13. Categories with Highest Discounts
+13. Categories with Highest Discounts
 - Insert Pivot Table
 - **Rows**: `category`
 - **Values**: `discount_percentage` → **Average**
 - 🔹 Sort descending
 
----
-
-### 14. Top 5 Products by Composite Score
+14. Top 5 Products by Composite Score
 - Add column in sheet:
-  ```excel
   =rating * LN(rating_count + 1)
-  ```
 - Insert Pivot Table:
   - **Rows**: `product_name`
   - **Values**: new column → **Average**
   - 🔹 Sort descending, pick top 5
+```
 
----
+### Result
+
+## 📄 File: Amazon_Pivot_Insights_Results.xlsx
+
+This Excel file includes **14 individual sheets**, each answering a specific business question using product and review data:
+
+| Sheet Name                        | Insight Description                                                  |
+|----------------------------------|-----------------------------------------------------------------------|
+| Q1_Avg_Discount_By_Cat           | Average discount percentage by product category                      |
+| Q2_Product_Count_By_Cat          | Number of unique products listed under each category                 |
+| Q3_Reviews_By_Cat                | Total number of reviews per category                                 |
+| Q4_Top_Avg_Rated_Products        | Top 10 products with the highest average rating                      |
+| Q5_Price_Comparison              | Average actual vs discounted price by category                       |
+| Q6_Most_Reviewed_Products        | Top 10 products with the most reviews                                |
+| Q7_50pct_Discount_Count          | Total number of products with a discount of 50% or more              |
+| Q8_Rating_Distribution           | Count of products per rating (e.g., 3.0, 4.0, etc.)                  |
+| Q9_Revenue_By_Category           | Total estimated revenue per category (actual_price × rating_count)   |
+| Q10_Price_Buckets                | Count of unique products by price range (<₹200, ₹200–₹500, >₹500)   |
+| Q11_Rating_vs_Discount           | Table of rating and discount values (for scatter plot analysis)      |
+| Q12_Under_1000_Reviews           | Products with fewer than 1,000 reviews                               |
+| Q13_Top_Discount_Cats            | Categories with the highest average discounts                        |
+| Q14_Top_Products_Score           | Top 5 products based on composite score: rating × log(review count)  |
+
 
