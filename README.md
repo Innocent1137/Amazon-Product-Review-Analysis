@@ -160,3 +160,26 @@ This Excel file includes **14 individual sheets**, each answering a specific bus
 | Q14_Top_Products_Score           | Top 5 products based on composite score: rating × log(review count)  |
 
 
+### ✅ Strategic Recommendations
+
+Based on the analysis of Amazon product data using Excel Pivot Tables, here are five key recommendations to improve product performance, marketing, and engagement:
+
+1. **Enhance Product Quality**  
+   Study top-rated and high-review products to identify features that can be applied across the product line.
+
+2. **Apply Smart Discounting**  
+   Use discounts to drive sales, but avoid excessive markdowns that may reduce perceived product value.
+
+3. **Target Marketing Around Bestsellers**  
+   Allocate marketing budget to top-performing products and categories with high conversion potential.
+
+4. **Boost Customer Engagement Through Reviews**  
+   Encourage more reviews on lower-performing products through follow-ups, loyalty programs, or incentives.
+
+
+### ⚠️ Project Limitations
+
+This analysis provides valuable insights using available product and review data.  
+While some fields are estimated (e.g., revenue), they offer useful directional guidance.  
+Additional attributes like time trends or detailed categories could enhance future analysis.
+
