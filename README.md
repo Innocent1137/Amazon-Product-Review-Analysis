@@ -1,27 +1,11 @@
 # Amazon Product Review Analysis
 An analysis of Amazon product reviews using exploratory data analysis, sentiment classification, and visualization techniques.
 
-
-# 📑 Table of Contents
-
-- [📊 Project Overview](#project-overview)
-- 
-- [📂 Data Source](#data-source)
-- [🧹 Data Cleaning / Preparation](#3-data-cleaning--preparation)
-- [📊 Exploratory Data Analysis](#4-exploratory-data-analysis-pivot-table-logic)
-  - [Key Questions](#key-questions-answered)
-  - [Pivot Table Steps](#5--pivot-table-steps-excel-logic-summary)
-- [📁 Result File](#6--result-file)
-- [✅ Strategic Recommendations](#7-strategic-recommendations)
-- [⚠️ Project Limitations](#8-project-limitations)
-- [📚 References](#9-references)
-
-
-### 1. Project Overview
+### Project Overview
 
 This project analyzes Amazon product review data using Pivot Tables. It explores key business metrics such as average discounts, ratings, review counts, and potential revenue to uncover trends and insights from customer behavior.
 
-### 2. Data Source
+### Data Source
 Data Source: The parmary dataset used for the analysis is "Amazon case study.xlsx" provided by DSA Data_file containing analytical exercises, such as product performance, review sentiment, and pricing
 
 ### TOOLS
@@ -32,7 +16,7 @@ Ms Excel for Data cleaning [Download Excel (Microsoft 365)](https://www.microsof
      1. Data manipolation
      2. Data Manching
  
-### 3. Data Cleaning/Preparation
+### Data Cleaning/Preparation
 
 
 In the initial data preparation phase, i performed the following task;
@@ -40,7 +24,7 @@ In the initial data preparation phase, i performed the following task;
 2. Handling missing values.
 3. Data cleaning and formatting
 
-### 4. Exploratory Data Analysis
+### Exploratory Data Analysis
 
 EDA involved exploring the sales data to answer the Question, such as:
 
