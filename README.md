@@ -1,6 +1,22 @@
 # Amazon Product Review Analysis
 An analysis of Amazon product reviews using exploratory data analysis, sentiment classification, and visualization techniques.
 
+
+# 📑 Table of Contents
+
+- [📊 Project Overview](#project-overview)
+- 
+- [📂 Data Source](#data-source)
+- [🧹 Data Cleaning / Preparation](#3-data-cleaning--preparation)
+- [📊 Exploratory Data Analysis](#4-exploratory-data-analysis-pivot-table-logic)
+  - [Key Questions](#key-questions-answered)
+  - [Pivot Table Steps](#5--pivot-table-steps-excel-logic-summary)
+- [📁 Result File](#6--result-file)
+- [✅ Strategic Recommendations](#7-strategic-recommendations)
+- [⚠️ Project Limitations](#8-project-limitations)
+- [📚 References](#9-references)
+
+
 ### 1. Project Overview
 
 This project analyzes Amazon product review data using Pivot Tables. It explores key business metrics such as average discounts, ratings, review counts, and potential revenue to uncover trends and insights from customer behavior.
@@ -136,6 +152,7 @@ Include some interersting code/ features worked with
   - 🔹 Sort descending, pick top 5
 ```
 
+
 ### Result
 
 ## 📄 File: Amazon_Pivot_Insights_Results.xlsx
@@ -160,6 +177,8 @@ This Excel file includes **14 individual sheets**, each answering a specific bus
 | Q14_Top_Products_Score           | Top 5 products based on composite score: rating × log(review count)  |
 
 
+
+
 ### ✅ Strategic Recommendations
 
 Based on the analysis of Amazon product data using Excel Pivot Tables, here are five key recommendations to improve product performance, marketing, and engagement:
@@ -177,9 +196,18 @@ Based on the analysis of Amazon product data using Excel Pivot Tables, here are 
    Encourage more reviews on lower-performing products through follow-ups, loyalty programs, or incentives.
 
 
+
 ### ⚠️ Project Limitations
 
 This analysis provides valuable insights using available product and review data.  
 While some fields are estimated (e.g., revenue), they offer useful directional guidance.  
 Additional attributes like time trends or detailed categories could enhance future analysis.
+
+
+### 📚 References
+
+- **Dataset**: Provided as part of the "Amazon Case Study" Excel file for analysis purposes from DSA.
+- **Tools Used**: Microsoft Excel (Pivot Tables)
+- **Framework**: Based on practical e-commerce analytics used for product improvement, customer engagement, and marketing strategy.
+
 
