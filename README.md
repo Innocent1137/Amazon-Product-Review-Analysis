@@ -49,6 +49,30 @@ EDA involved exploring the sales data to answer the Question, such as:
 - Which categories have the highest discounts?
 - What are the top 5 products by combined rating and review count?
 
+### 📊 Sample Pivot Table Results
+
+!Q1 Avg Discount by Category
+
+<img width="549" alt="average discount by cat" src="https://github.com/user-attachments/assets/d976c088-133b-436e-b61a-2a9ad90fbb6a" />
+
+*Pivot table showing average discount percentage per product category.*
+
+
+!Q6 Most Reviewed Products
+
+<img width="344" alt="most reviewed product" src="https://github.com/user-attachments/assets/01d0d7e7-f2e6-47be-8162-da5a61da7d8d" />
+
+*Top products with the highest number of reviews.*
+
+
+!Q9 Revenue by Category Chart
+
+<img width="544" alt="Revenue by category" src="https://github.com/user-attachments/assets/3b05e3ea-6e06-4c77-a092-318a25f7ce3e" />
+
+*Estimated revenue comparison by category.*
+
+
+
 ### Data Analysis
 
 Include some interersting code/ features worked with
