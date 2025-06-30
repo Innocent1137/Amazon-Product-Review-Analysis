@@ -5,6 +5,12 @@ An analysis of Amazon product reviews using exploratory data analysis, sentiment
 
 This project analyzes Amazon product review data using Pivot Tables. It explores key business metrics such as average discounts, ratings, review counts, and potential revenue to uncover trends and insights from customer behavior.
 
+### 📸 Project Visuals
+
+![Cleaned Dataset Preview]
+<img width="934" alt="cleaned amazon data" src="https://github.com/user-attachments/assets/877a774d-c53d-46a3-bc3d-42cf035a6f2d" />
+
+
 ### Data Source
 Data Source: The parmary dataset used for the analysis is "Amazon case study.xlsx" provided by DSA Data_file containing analytical exercises, such as product performance, review sentiment, and pricing
 
